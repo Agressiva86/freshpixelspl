@@ -1,0 +1,154 @@
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="pl"> <![endif]-->
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1,shrink-to-fit=yes,maximum-scale=1,user-scalable=1">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="description"
+		content="Goedkope Vueling-vliegtickets en informatie over vliegen met Vueling ✓ Bagageregels ✓ Reisklassen ✓ Online inchecken ✓ Beenruimte" />
+
+	<meta property="og:locale" content="pl_PL" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Vergelijk alle Vueling-vluchten, nu vanaf € 58 | Vliegtickets.nl" />
+	<meta property="og:description"
+		content="Goedkope Vueling-vliegtickets en informatie over vliegen met Vueling ✓ Bagageregels ✓ Reisklassen ✓ Online inchecken ✓ Beenruimte" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="Vliegtickets.nl" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:description"
+		content="Goedkope Vueling-vliegtickets en informatie over vliegen met Vueling ✓ Bagageregels ✓ Reisklassen ✓ Online inchecken ✓ Beenruimte" />
+	<meta name="twitter:title" content="Vergelijk alle Vueling-vluchten, nu vanaf € 58 | Vliegtickets.nl" />
+
+	<link rel="preload" href="dist/app.css" as="style">
+	<!-- <link rel="preload" href="fonts/red-hat-display-v3-latin_latin-ext-regular.woff2" as="font" crossorigin>
+	<link rel="preload" href="fonts/red-hat-display-v3-latin_latin-ext-regular.woff" as="font" crossorigin>
+
+	<link rel="preload" href="fonts/red-hat-display-v3-latin_latin-ext-700.woff2" as="font" crossorigin>
+	<link rel="preload" href="fonts/red-hat-display-v3-latin_latin-ext-700.woff" as="font" crossorigin>
+
+	<link rel="preload" href="fonts/red-hat-display-v3-latin_latin-ext-900.woff2" as="font" crossorigin>
+	<link rel="preload" href="fonts/red-hat-display-v3-latin_latin-ext-900.woff" as="font" crossorigin> -->
+
+	<link rel="canonical" href="" />
+	<link rel='stylesheet' href='dist/app.css' type='text/css' media='all' />
+
+</head>
+
+<body>
+
+	<header id="header">
+		<div class="item logo">
+			<img src="images/fp-logo.svg" alt="">
+		</div>
+		<div class="item nav">
+			<!-- <ul>
+				<li><a href="" title="">Home</a></li>
+				<li><a href="" title="">Portfolio</a></li>
+				<li><a href="" title="">Blog</a></li>
+			</ul> -->
+		</div>
+		<div class="item contact">
+			<a href="">Kontakt</a>
+		</div>
+	</header>
+
+	<div class="headline">
+		<h1>
+			Better design for<br>your digital products<span class="red-color">.</span>
+		</h1>
+	</div>
+
+	<div id="wrapper">
+		<div class="portfolio">
+			<div class="item item-1">
+				<div class="cover">
+					<img src="images/londonacademy.jpg" alt="">
+					<div class="overlay" style="background-color: #514DBC;"></div>
+				</div>
+				<h2>London Academy</h2>
+				<div class="details">
+					<strong>branding, app design</strong>
+					<a href="" class="more"><span>View more</span></a>
+				</div>
+			</div>
+			<div class="item item-2">
+				<div class="cover">
+					<img src="images/malawielkafirma.jpg" alt="">
+					<div class="overlay" style="background-color: #E3052C;"></div>
+				</div>
+				<h2>Mała Wielkie Firma</h2>
+				<div class="details">
+					<strong>branding, app design</strong>
+					<a href="" class="more"><span>View more</span></a>
+				</div>
+			</div>
+			<div class="item item-3">
+				<div class="cover">
+					<img src="images/lionlease-logo.jpg" alt="">
+					<div class="overlay" style="background-color: #000000;"></div>
+				</div>
+				<h2>LionLease</h2>
+				<div class="details">
+					<strong>branding, logotype</strong>
+					<a href="" class="more"><span>View more</span></a>
+				</div>
+			</div>
+			<div class="item item-4">
+				<div class="cover">
+					<img src="images/kp-web1.jpg" alt="">
+					<div class="overlay" style="background-color: #1B67FB;"></div>
+				</div>
+				<h2>Kamil Porembiński</h2>
+				<div class="details">
+					<strong>branding, creative</strong>
+					<a href="" class="more"><span>View more</span></a>
+				</div>
+			</div>
+			<div class="item item-5">
+				<div class="cover">
+					<img src="images/lionlease-web.jpg" alt="">
+					<div class="overlay" style="background-color: #000000;"></div>
+				</div>
+				<h2>LionLease</h2>
+				<div class="details">
+					<strong>branding, creative</strong>
+					<a href="" class="more"><span>View more</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/ScrollMagic.min.js"></script>
+	<script src="js/animation.gsap.js"></script>
+	<script src="js//debug.addIndicators.min.js"></script>
+
+	<script>
+		var controller = new ScrollMagic.Controller();
+
+		$(".cover").each(function() {
+		var tl = new TimelineMax();
+		var cov = $(this).find(".overlay");
+		var img = $(this).find("img");
+
+		tl.from(cov, 0.5, { scaleX: 0, transformOrigin: "left" });
+		tl.to(cov, 0.5, { scaleX: 0, transformOrigin: "right" }, "reveal");
+		tl.from(img, 0.5, { opacity: 0 }, "reveal");
+
+		var scene = new ScrollMagic.Scene({
+			triggerElement: this,
+			triggerHook: 0.7
+		})
+			.setTween(tl)
+			.addTo(controller);
+		});
+
+	</script>
+</body>
+
+</html>
