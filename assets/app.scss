@@ -1,37 +1,25 @@
 @font-face {
-    font-family: "Red Hat Display";
+    font-family: "Space Grotesk";
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: local("Red Hat Display"), local("RedHatDisplay-Regular"),
-        url("../fonts/red-hat-display-v3-latin_latin-ext-regular.woff2")
-            format("woff2"),
-        url("../fonts/red-hat-display-v3-latin_latin-ext-regular.woff")
-            format("woff");
+    src: url("../fonts/space-grotesk-400.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: "Red Hat Display";
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("../fonts/space-grotesk-500.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Space Grotesk";
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: local("Red Hat Display Bold"), local("RedHatDisplay-Bold"),
-        url("../fonts/red-hat-display-v3-latin_latin-ext-700.woff2")
-            format("woff2"),
-        url("../fonts/red-hat-display-v3-latin_latin-ext-700.woff")
-            format("woff");
-}
-
-@font-face {
-    font-family: "Red Hat Display";
-    font-style: normal;
-    font-weight: 900;
-    font-display: swap;
-    src: local("Red Hat Display Black"), local("RedHatDisplay-Black"),
-        url("../fonts/red-hat-display-v3-latin_latin-ext-900.woff2")
-            format("woff2"),
-        url("../fonts/red-hat-display-v3-latin_latin-ext-900.woff")
-            format("woff");
+    src: url("../fonts/space-grotesk-700.woff2") format("woff2");
 }
 
 $white-color: #ffffff;
@@ -94,7 +82,7 @@ $red-color: #da0a2c;
 }
 
 body {
-    font-family: "Red Hat Display", sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     background-color: $white-color;
     margin: 0;
     overflow-x: hidden;
@@ -123,8 +111,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 900;
-    font-family: "Red Hat Display", sans-serif;
+    font-weight: 700;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 .text-right {
@@ -288,7 +276,7 @@ h6 {
 
     h1 {
         margin: 0;
-        font-weight: 900;
+        font-weight: 700;
         line-height: 100%;
 
         font-size: 40px;
@@ -451,7 +439,7 @@ h6 {
     h1 {
         align-self: center;
         margin: 0;
-        font-weight: 900;
+        font-weight: 700;
         text-align: center;
         line-height: 100%;
 

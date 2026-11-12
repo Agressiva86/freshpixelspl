@@ -37,37 +37,28 @@
 	<link rel='stylesheet' href='dist/app.css' type='text/css' media='all' />
 
 	<link rel="preload" href="dist/app.css" as="style">
-	<link rel="preload" href="fonts/red-hat-display-v3-latin_latin-ext-regular.woff2" as="font" crossorigin>
-	<link rel="preload" href="fonts/red-hat-display-v3-latin_latin-ext-regular.woff" as="font" crossorigin>
-
-	<link rel="preload" href="fonts/red-hat-display-v3-latin_latin-ext-700.woff2" as="font" crossorigin>
-	<link rel="preload" href="fonts/red-hat-display-v3-latin_latin-ext-700.woff" as="font" crossorigin>
-
-	<link rel="preload" href="fonts/red-hat-display-v3-latin_latin-ext-900.woff2" as="font" crossorigin>
-	<link rel="preload" href="fonts/red-hat-display-v3-latin_latin-ext-900.woff" as="font" crossorigin>
+	<link rel="preload" href="fonts/space-grotesk-400.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/space-grotesk-700.woff2" as="font" type="font/woff2" crossorigin>
 
 	<link rel="canonical" href="" />
 
-	<link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-touch-icon.png">
+	<link rel="icon" href="favicon.ico" sizes="any">
 	<link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="images/fav/apple-touch-icon-167x167.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/fav/apple-touch-icon-152x152.png">
 	<link rel="manifest" href="images/fav/site.webmanifest">
-	<link rel="mask-icon" href="images/fav/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="mask-icon" href="images/fav/safari-pinned-tab.svg" color="#dfef67">
 	<meta name="apple-mobile-web-app-title" content="FreshPixels">
 	<meta name="application-name" content="FreshPixels">
 
-	<meta name="msapplication-TileColor" content="#DA0A2C">
-	<meta name="theme-color" content="#DA0A2C">
+	<meta name="msapplication-TileColor" content="#101010">
+	<meta name="msapplication-config" content="images/fav/browserconfig.xml">
+	<meta name="theme-color" content="#101010">
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-26013416-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'UA-26013416-1');
-	</script>
+	<link rel="preload" href="fonts/space-grotesk-500.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="stylesheet" href="assets/hero.css">
 
 </head>
 
@@ -76,40 +67,72 @@
 	<div class="cursor-follower"></div>
 
 	<div id="landing">
-		<div class="item item-follow text-center">
-			<span>
-				Follow Us:
-				<small class="white-color">/</small>
-				<a href="https://www.facebook.com/freshpixelspl/" target="_blank">Fb.</a>
-				<small>/</small>
-				<a href="https://dribbble.com/Agressiva" target="_blank">Drib.</a>
-				<small>/</small>
-				<a href="" target="_blank">Inst.</a>
-			</span>
-		</div>
-		<div class="item item-left">
-			<img src="images/fp-logo.svg" alt="">
+		<div class="hero-copy">
+			<div class="hero-top">
+				<div class="brand">
+					<span class="brand-line">freshpixels</span>
+					<span class="brand-line">studio<span class="brand-dot" aria-hidden="true"></span></span>
+				</div>
+				<nav class="hero-links" aria-label="Social">
+					<a href="https://www.facebook.com/freshpixelspl/" target="_blank">Fb.</a>
+					<span aria-hidden="true">·</span>
+					<a href="https://dribbble.com/Agressiva" target="_blank">Drib.</a>
+					<span aria-hidden="true">·</span>
+					<a href="" target="_blank">Inst.</a>
+				</nav>
+			</div>
 
-			<div class="content">
-				<h1>UI & UX design for your digital products<span class="red-color">.</span></h1>
+			<div class="hero-body">
+				<h1>
+					UI &amp; UX design
+					<svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><path fill="#101010" d="M12 1.4l1.55 6.85L20.4 10l-6.85 1.55L12 18.4l-1.55-6.85L3.6 10l6.85-1.55L12 1.4z"/></svg><br>
+					for your
+					<span class="glyph-chip" aria-hidden="true">
+						<svg viewBox="0 0 24 24"><path fill="none" stroke="#101010" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M9 7.5L5.5 12 9 16.5M15 7.5l3.5 4.5L15 16.5"/></svg>
+					</span>
+					digital<br>
+					products<span class="h-dot" aria-hidden="true"></span>
+				</h1>
+
+				<svg class="squiggle" viewBox="0 0 64 16" aria-hidden="true">
+					<path d="M2 10c6-8 10 8 16 0s10 8 16 0 10 8 16 0 8 6 12 0" fill="none" stroke="#101010" stroke-width="2.4" stroke-linecap="round"/>
+				</svg>
 
 				<p>
-					We're a digital agency focused on <strong>UI & UX design</strong>. We also offer auditing and
-					optimization of websites based on <strong>WordPress</strong>.
+					We are a digital agency specializing in <strong>UI/UX design</strong>, high-performance web development with <strong>Astro</strong>, and expert <strong>WordPress</strong> audits and optimization.
 				</p>
 
-				<p>
-					Let's talk about your project.<br>
-					<a href="mailto:hello@freshpixels.pl" target="_blank">
-						hello@freshpixels.pl
+				<div class="hero-actions">
+					<a class="hero-cta" href="mailto:hello@freshpixels.pl">
+						<span>Let's talk</span>
+						<span class="hero-cta-mail">hello@freshpixels.pl</span>
+						<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
 					</a>
-				</p>
+					<button type="button" class="privacy-open" aria-haspopup="dialog" aria-controls="privacy-dialog">
+						<span aria-hidden="true">i</span>
+						<span class="visually-hidden">Privacy notice</span>
+					</button>
+				</div>
 			</div>
 		</div>
-		<div class="item item-right text-right">
-			<div class="loadeffect">
-				<img src="images/illustration.svg" alt="">
-				<div class="overlay"></div>
+
+		<div class="hero-stage">
+			<div class="stage-shape-clip" aria-hidden="true">
+				<img class="stage-shape" src="images/freshpixels_shape.svg" alt="">
+			</div>
+			<div class="code-float">
+				<div class="code-window">
+					<div class="code-rail" aria-hidden="true">
+						<svg width="18" height="18" viewBox="0 0 24 24"><path d="M8 8h10v10H8zM6 6h10" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>
+						<svg width="18" height="18" viewBox="0 0 24 24"><path d="M6 7h12M6 12h8M6 17h10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+						<svg width="18" height="18" viewBox="0 0 24 24"><path d="M8 8l-3 4 3 4M16 8l3 4-3 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+						<svg width="18" height="18" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 5v2M12 17v2M5 12h2M17 12h2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+					</div>
+					<div class="code-main">
+						<pre id="live-code" aria-hidden="true"></pre>
+					</div>
+				</div>
+				<div class="hero-status"><span class="live-dot" aria-hidden="true"></span>Interface · live</div>
 			</div>
 		</div>
 	</div>
@@ -137,8 +160,54 @@
 		</div>
 	</aside>
 	<footer id="landing_footer">
-		2020 © FreshPixels - UI & UX Design Studio. All rights reserved.
+		<p class="footer-copy"><time id="footer-year" datetime="2026">2026</time> © FreshPixels - UI & UX Design Studio. All rights reserved.</p>
+		<p class="footer-company">FreshPixels - Maciej Palmowski, NIP 7251866143, REGON 101285852</p>
 	</footer>
+
+	<div id="privacy-layer" class="privacy-layer" hidden>
+		<div class="privacy-backdrop" data-privacy-close></div>
+		<div id="privacy-dialog" class="privacy-dialog" role="dialog" aria-modal="true" aria-labelledby="privacy-title">
+			<button type="button" class="privacy-close" data-privacy-close aria-label="Close">×</button>
+			<h2 id="privacy-title">Privacy Notice – Email Contact</h2>
+			<p>I want you to feel secure knowing how your data is handled when you send me a message. Here is all the important information:</p>
+			<h3>Who is the Data Controller?</h3>
+			<p>The controller of your personal data is FreshPixels - Maciej Palmowski (Tax ID / NIP: 7251866143, REGON: 101285852). If you have any questions regarding your data, feel free to email me at <a href="mailto:hello@freshpixels.pl">hello@freshpixels.pl</a>.</p>
+			<h3>Why and on what legal basis do I process your data?</h3>
+			<p>The message you send to hello@freshpixels.pl is processed in order to:</p>
+			<ul>
+				<li>reply to your inquiry,</li>
+				<li>discuss the scope of potential cooperation,</li>
+				<li>prepare a tailored offer for you.</li>
+			</ul>
+			<p>I process your data based on GDPR regulations because:</p>
+			<ul>
+				<li>it is necessary to take steps at your request prior to entering into a contract (Article 6(1)(b) of the GDPR),</li>
+				<li>I have a legitimate interest in conducting business correspondence and establishing, exercising, or defending legal claims (Article 6(1)(f) of the GDPR).</li>
+			</ul>
+			<h3>Do you have to provide your data?</h3>
+			<p>Providing your data is voluntary; however, without your email address and the message content, I won’t be able to reply to you. Your message may include your name, company name, and any other details you choose to share.</p>
+			<h3>Who sees your data and how long is it stored?</h3>
+			<p><strong>Recipients:</strong> Your data is stored by the email service provider hosting my inbox. Your data is never sold to anyone.</p>
+			<p><strong>Storage period:</strong> Correspondence is kept for as long as needed to handle your inquiry, and subsequently until the statute of limitations for any claims expires. If we sign an agreement, your data will be kept for the duration of the contract and for the periods required by law (including tax regulations).</p>
+			<h3>Your Rights</h3>
+			<p>You are in control of your personal data. At any time, you have the right to:</p>
+			<ul>
+				<li>request access to your data, rectification, erasure, or restriction of processing,</li>
+				<li>object to the processing of your data (when based on legitimate interest),</li>
+				<li>lodge a complaint with the Polish Data Protection Authority (President of the Personal Data Protection Office, ul. St. Moniuszki 1A, 00-014 Warsaw, uodo.gov.pl).</li>
+			</ul>
+			<p>Want to exercise your rights? Simply drop a message at <a href="mailto:hello@freshpixels.pl">hello@freshpixels.pl</a> and let me know in the subject line which right you wish to exercise.</p>
+		</div>
+	</div>
+	<script>
+		(function () {
+			var year = String(new Date().getFullYear());
+			var node = document.getElementById("footer-year");
+			if (!node) return;
+			node.dateTime = year;
+			node.textContent = year;
+		})();
+	</script>
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/TweenMax.min.js"></script>
@@ -202,16 +271,156 @@
 			mouseY = e.clientY;
 		});
 
-		$("a").on("mouseenter", function () {
+		$("a, .privacy-open, .privacy-close").on("mouseenter", function () {
 			cursor.addClass("active");
 			follower.addClass("active");
 		});
-		$("a").on("mouseleave", function () {
+		$("a, .privacy-open, .privacy-close").on("mouseleave", function () {
 			cursor.removeClass("active");
 			follower.removeClass("active");
 		});
 
+		(function () {
+			var root = document.getElementById("live-code");
+			if (!root) return;
 
+			var lines = [
+				[{ c: "tok-s", t: "---" }],
+				[{ c: "tok-p", t: "import " }, { c: "tok-s", t: "BuyButton " }, { c: "tok-p", t: "from " }, { c: "tok-v", t: "'../components/BuyButton.jsx'" }, { c: "tok-s", t: ";" }],
+				[{ c: "tok-p", t: "import " }, { c: "tok-s", t: "{ getProductDetails } " }, { c: "tok-p", t: "from " }, { c: "tok-v", t: "\"ecommerce-package\"" }, { c: "tok-s", t: ";" }],
+				[{ c: "tok-p", t: "import " }, { c: "tok-s", t: "ProductPageLayout " }, { c: "tok-p", t: "from " }, { c: "tok-v", t: "'../layouts/ProductPageLayout.astro'" }, { c: "tok-s", t: ";" }],
+				[],
+				[{ c: "tok-p", t: "const " }, { c: "tok-s", t: "product = " }, { c: "tok-p", t: "await " }, { c: "tok-s", t: "getProductDetails(" }, { c: "tok-v", t: "Astro.params.slug" }, { c: "tok-s", t: ");" }],
+				[],
+				[{ c: "tok-s", t: "---" }],
+				[],
+				[{ c: "tok-s", t: "<ProductPageLayout>" }],
+				[{ c: "tok-s", t: "  <img src={product.imageUrl} alt={product.imageAlt} />" }],
+				[{ c: "tok-s", t: "  <h2>{product.name}</h2>" }],
+				[{ c: "tok-s", t: "  <BuyButton id={product.id} " }, { c: "tok-v", t: "client:load" }, { c: "tok-s", t: " />" }],
+				[{ c: "tok-s", t: "</ProductPageLayout>" }]
+			];
+
+			function escapeHtml(value) {
+				return value.replace(/&/g, "&amp;").replace(/</g, "&lt;");
+			}
+
+			function paint(tokens) {
+				return tokens.map(function (token) {
+					return '<span class="' + token.c + '">' + escapeHtml(token.t) + "</span>";
+				}).join("");
+			}
+
+			function render(done, partial) {
+				var html = done.map(function (line) {
+					return '<span class="line">' + paint(line) + "</span>";
+				}).join("");
+
+				if (partial) {
+					html += '<span class="line is-on">' + paint(partial) + '<i class="caret"></i></span>';
+				}
+
+				root.innerHTML = html;
+			}
+
+			if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+				render(lines, null);
+				return;
+			}
+
+			var lineIndex = 0;
+			var tokenIndex = 0;
+			var charIndex = 0;
+			var done = [];
+
+			function hold() {
+				var cursor = 0;
+				var spots = lines.map(function (line, index) { return line.length ? index : -1; }).filter(function (index) {
+					return index >= 0;
+				});
+
+				setInterval(function () {
+					var active = spots[cursor % spots.length];
+					root.innerHTML = lines.map(function (line, index) {
+						var caret = index === active ? '<i class="caret"></i>' : "";
+						var cls = index === active ? "line is-on" : "line";
+						return '<span class="' + cls + '">' + paint(line) + caret + "</span>";
+					}).join("");
+					cursor += 1;
+				}, 850);
+			}
+
+			function tick() {
+				if (lineIndex >= lines.length) {
+					render(done, null);
+					hold();
+					return;
+				}
+
+				var line = lines[lineIndex];
+				if (!line.length) {
+					done.push(line);
+					lineIndex += 1;
+					tokenIndex = 0;
+					charIndex = 0;
+					render(done, null);
+					setTimeout(tick, 70);
+					return;
+				}
+
+				var token = line[tokenIndex];
+				var partial = line.slice(0, tokenIndex).map(function (item) {
+					return { c: item.c, t: item.t };
+				});
+				partial.push({ c: token.c, t: token.t.slice(0, charIndex + 1) });
+				render(done, partial);
+
+				charIndex += 1;
+				var pause = 11 + Math.random() * 16;
+				if (charIndex >= token.t.length) {
+					charIndex = 0;
+					tokenIndex += 1;
+					pause += 30;
+					if (tokenIndex >= line.length) {
+						done.push(line);
+						lineIndex += 1;
+						tokenIndex = 0;
+						pause += 60;
+					}
+				}
+
+				setTimeout(tick, pause);
+			}
+
+			tick();
+		})();
+
+		(function () {
+			var layer = document.getElementById("privacy-layer");
+			var openBtn = document.querySelector(".privacy-open");
+			if (!layer || !openBtn) return;
+
+			function openPrivacy() {
+				layer.hidden = false;
+				document.body.classList.add("privacy-on");
+				var closeBtn = layer.querySelector(".privacy-close");
+				if (closeBtn) closeBtn.focus();
+			}
+
+			function closePrivacy() {
+				layer.hidden = true;
+				document.body.classList.remove("privacy-on");
+				openBtn.focus();
+			}
+
+			openBtn.addEventListener("click", openPrivacy);
+			layer.addEventListener("click", function (event) {
+				if (event.target.closest("[data-privacy-close]")) closePrivacy();
+			});
+			document.addEventListener("keydown", function (event) {
+				if (event.key === "Escape" && !layer.hidden) closePrivacy();
+			});
+		})();
 	</script>
 </body>
 
