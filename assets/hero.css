@@ -3,6 +3,10 @@
     background: #dfef67;
 }
 
+html {
+    overflow-x: clip;
+}
+
 body {
     min-height: 100vh;
     min-height: 100dvh;
@@ -10,6 +14,7 @@ body {
     flex-direction: column;
     background: #ffffff;
     color: #101010;
+    overflow-x: clip;
 }
 
 .cursor {
@@ -372,15 +377,10 @@ body.privacy-on {
     pointer-events: none;
 }
 
-.stage-shape {
-    position: absolute;
-    left: 44%;
-    top: -28%;
-    width: 106%;
-    height: auto;
-    max-width: none;
-    transform: translateX(-50%);
-    pointer-events: none;
+.glass-field {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .code-float {
@@ -555,25 +555,87 @@ body.privacy-on {
 }
 
 @media (min-width: 981px) {
+    #landing {
+        --hero-title: clamp(44px, 4.8vw, 74px);
+        flex: none;
+        height: 100vh;
+        min-height: 100vh;
+        grid-template-columns: minmax(0, 1.18fr) minmax(260px, 0.82fr) !important;
+        padding: 0 !important;
+    }
+
+    #landing .hero-body p {
+        max-width: 340px;
+    }
+
     .code-float {
         left: auto;
-        right: 4%;
+        right: 8px;
         top: 50%;
-        width: min(600px, 132%);
+        width: min(600px, calc(100vw - max(480px, 7.8 * var(--hero-title) + 112px)));
         transform: translateY(-50%);
         animation-name: hero-float-side;
+    }
+
+    .code-window {
+        height: calc(14 * 1.4em + 42px);
+    }
+
+    .code-main {
+        padding: 20px 22px 18px 14px;
+    }
+
+    .code-rail {
+        width: 52px;
+        flex-basis: 52px;
+        padding-top: 24px;
     }
 }
 
 @media (min-width: 1200px) {
+    #landing .hero-body p {
+        max-width: 400px;
+    }
+
     .code-float {
-        right: auto;
-        left: -88px;
-        width: 640px;
+        right: 16px;
+        width: min(700px, calc(100vw - max(548px, 7.8 * var(--hero-title) + 132px)));
+    }
+
+    .code-rail {
+        width: 68px;
+        flex-basis: 68px;
+        padding-top: 26px;
+    }
+
+    .code-main {
+        padding: 24px 28px 22px 18px;
+    }
+
+    .code-window {
+        font-size: 13px;
+        height: calc(14 * 1.4em + 50px);
+    }
+}
+
+@media (min-width: 1440px) {
+    #landing .hero-body p {
+        max-width: 430px;
+    }
+
+    .code-float {
+        right: 28px;
+        left: auto;
+        width: min(760px, calc(100vw - max(560px, 7.8 * var(--hero-title) + 120px)));
+    }
+
+    .code-main {
+        padding: 26px 32px 24px 20px;
     }
 
     .code-window {
         font-size: 14px;
+        height: calc(14 * 1.4em + 54px);
     }
 }
 
